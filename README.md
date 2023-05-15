@@ -16,21 +16,22 @@ to be published at ECOOP 2023.
 
 ## Usage Scenarios
 
-* The Scala implementation provides a direct-style notation as an alternative
-  to the for-comprehensions (do-notation), that compiles not only to sequential (monadic),
-  but also parallel (applicative) combinators.
-  This can be re-used by importing it.
-  An example of how our artifact can be reused in new applications can be found below.
+The Scala implementation provides a direct-style notation as an alternative
+to the for-comprehensions (do-notation), that compiles not only to sequential (monadic),
+but also parallel (applicative) combinators.
+This can be re-used by importing it.
+An example of how our artifact can be reused in new applications can be found below.
 
-  For evaluation, we suggest experimenting with writing an additional
-  direct-style notation expression in file `src/scala/src/main/parseq/Tests.scala`,
-  and taking it from there.
+For evaluation, we suggest experimenting with writing an additional
+direct-style notation expression in file `src/scala/src/main/parseq/Tests.scala`,
+and taking it from there.
 
 ## Getting Started
 
-1) Install IntelliJ + Scala-plugin or VSCode + Metals-plugin
-2) Clone and import repo
-3) Have fun!
+1) CoqIde for proofs
+2) Install IntelliJ + Scala-plugin or VSCode + Metals-plugin for scala code
+3) Clone and import repo
+4) Have fun!
 
 ### Run Tests
 
