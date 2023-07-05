@@ -123,7 +123,7 @@ You can duplicate one of the tests, for example,
   )
 ```
 
-Purify has roughly type `pureify : ((List[X] => X) => X) => List[X]`,
+Purify has roughly type `purify : ((List[X] => X) => X) => List[X]`,
 e.g., it will give you an "extractor", e.g., a way to perform a direct-style effect.
 
 (This is extractor is not a normal method -- for example an extraction function
