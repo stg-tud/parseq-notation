@@ -14,6 +14,14 @@ This is the artifact corresponding to the paper
 'A Direct-Style Effect Notation for Sequential and Parallel Programs'
 to be published at ECOOP 2023.
 
+## Quickstart - Try it out online
+
+You can try writing programs using parseq via the Scastie Web Editor:
+https://scastie.scala-lang.org/vNIbTSQjRKyvHeLOdC6iVw
+
+If you want to know how to write programs using parseq, see the examples here:
+[/scala/src/main/scala/parseq/Tests.scala](/scala/src/main/scala/parseq/Tests.scala)
+
 ## Usage Scenarios
 
 The Scala implementation provides a direct-style notation as an alternative
