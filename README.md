@@ -7,12 +7,15 @@
                                     | |
                                     |_|
 
-
 # A Direct-Style Effect Notation for Sequential and Parallel Programs
 
-This is the artifact corresponding to the paper
-'A Direct-Style Effect Notation for Sequential and Parallel Programs'
-to be published at ECOOP 2023.
+*(This is the code corresponding to the paper 'A Direct-Style Effect Notation for Sequential and Parallel Programs', published at ECOOP 2023.)*
+
+The Scala implementation provides a direct-style notation as an alternative
+to the for-comprehensions (do-notation), that compiles not only to sequential (monadic),
+but also parallel (applicative) combinators.
+This can be re-used by importing it.
+An example of how our artifact can be reused in new applications can be found below.
 
 ## Quickstart - Try it out online
 
@@ -22,17 +25,11 @@ https://scastie.scala-lang.org/vNIbTSQjRKyvHeLOdC6iVw
 If you want to know how to write programs using parseq, see the examples here:
 [/scala/src/main/scala/parseq/Tests.scala](/scala/src/main/scala/parseq/Tests.scala)
 
-## Usage Scenarios
-
-The Scala implementation provides a direct-style notation as an alternative
-to the for-comprehensions (do-notation), that compiles not only to sequential (monadic),
-but also parallel (applicative) combinators.
-This can be re-used by importing it.
-An example of how our artifact can be reused in new applications can be found below.
-
-For evaluation, we suggest experimenting with writing an additional
-direct-style notation expression in file `src/scala/src/main/parseq/Tests.scala`,
-and taking it from there.
+Otherwise, to use in a scala project, you can add the following to your sbt file:
+```sbt
+resolvers += "jitpack" at "https://jitpack.io"
+libraryDependencies += "com.github.stg-tud" % "parseq-notation" % "b3ba165274"	
+```
 
 ## Getting Started
 
@@ -112,6 +109,10 @@ Test results:
 ```
 
 # How to use parseq notation
+
+For evaluation, we suggest experimenting with writing an additional
+direct-style notation expression in file `src/scala/src/main/parseq/Tests.scala`,
+and taking it from there.
 
 We give an example of how the artifact can be applied to additional programs.
 We describe a simple change to demonstrate that the case studies
