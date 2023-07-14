@@ -31,6 +31,14 @@ resolvers += "jitpack" at "https://jitpack.io"
 libraryDependencies += "com.github.stg-tud" % "parseq-notation" % "b3ba165274"	
 ```
 
+And then use it like this in your scala files:
+```
+import parseq.{*, given}
+purify { (each: Extractor[List]) =>
+  each(List(1, 2)) + each(List(3, 4))
+}
+```
+
 ## Getting Started
 
 1) CoqIde for proofs
