@@ -17,6 +17,16 @@ but also parallel (applicative) combinators.
 This can be re-used by importing it.
 An example of how our artifact can be reused in new applications can be found below.
 
+Besides that, you can also find here the proof that
+our translation of our direct-style effect-notation
+into explicit functor/applicative/monad-operations
+preserves typability, semantics, work and span of the translated terms,
+mechanised in Coq and described in the paper.
+
+Arxiv: https://arxiv.org/abs/2305.08496
+
+DOI: https://doi.org/10.4230/LIPIcs.ECOOP.2023.25
+
 ## Quickstart - Try it out online
 
 You can try writing programs using parseq via the Scastie Web Editor:
